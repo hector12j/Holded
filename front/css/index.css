@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #2d9bad;
+}
+
+.header a img {
+  width: 12%;
+  height: auto;
+  margin: 0.6%;
+}
+.fa {
+  float: right !important;
+  color: #1c79d4;
+  margin-right: 2%;
+}
+
+.fa:focus {
+  color: #f6465d;;
+}
+
+.gallery {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.gallery .widget {
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: 1;
+  margin: 5px;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 3px 3px 17px -1px rgba(0, 0, 0, 0.76);
+  justify-content: center;
+  align-items: stretch; 
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1c79d4;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal .modal-content .row {
+  margin: 3%;
+}
+
+.modal .modal-content h1 {
+  text-align: center;
+}
+
+.modal .modal-content .buttons {
+  width: 100%;
+  float: right;
+  height: 50px;
+}
+
+.modal .modal-content .buttons .delete {
+  width: 50%;
+  float: left;
+  color: white;
+  height: 100%;
+  background-color: #f44336;
+  border: 0;
+  border-radius: 0 0 0 0.5rem;
+}
+
+.modal .modal-content .buttons .delete:focus {
+  background-color: #f6465d;
+}
+
+.modal .modal-header .close-button {
+  float: right;
+  color: black;
+  height: 100%;
+  background-color: #1c79d4;
+  border: 0;
+  border-radius: 0 0 0 0.5rem;
+}
+
+.modal .modal-header .close-button:focus {
+  background-color: #f6465d;
+}
+
+.modal .modal-content .buttons .confirm {
+  width: 50%;
+  float: right;
+  color: white;
+  height: 100%;
+  background-color: #2d3dad;
+  border: 0;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.modal .modal-content .buttons .confirm:focus {
+  background-color: #f6465d;
+}
+
+input {
+  width: 97%;
+  margin: 1%;
+  height: 35px;
+  border-radius: 0.2rem;
+}
+
+::placeholder {
+  padding-left: 20px;
+}

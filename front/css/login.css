@@ -1,0 +1,52 @@
+body {
+	background-color: #1c79d4;
+}
+
+.card {
+	display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+  margin-top: 10%;
+}
+
+.card .container {
+  width: 350px;
+  height: 350px;
+  background-color: #1c79d4;
+}
+
+img {
+	width: 80%;
+	height: auto;
+	display: flex;
+	align-self :center;
+	margin: 0 auto;
+}
+
+.email, .password {
+	display: flex;
+	align-self :center;
+	width:90%;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	width:90%;
+
+	position: relative;
+	margin: 0 auto;
+	border-radius: 2px;
+	border-radius: 5px;
+	margin-top: 5px;
+	background-color: #3b5bfd;
+	color: white;
+}
